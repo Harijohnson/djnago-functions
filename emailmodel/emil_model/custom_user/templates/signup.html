@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'base.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+
+    <h1>Signup Page</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <h1>User Name : </h1>{{ form.username }} <br>
+        <h1>Email : </h1>{{ form.email }}    <br>
+        <h1>Enter Your Password : </h1>{{ form.password }} <br>
+        <h1>Confirm Password : </h1>{{ form.cpassword }} <br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    {% endblock %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signin-container {
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.popup-container {
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+button {
+    margin: 10px;
+}
+
+.logout-button {
+    display: none;
+}
